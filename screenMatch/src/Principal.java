@@ -1,4 +1,5 @@
 import br.com.matheusnegrini.screenmatch.calculo.CalculadoraDeTempo;
+import br.com.matheusnegrini.screenmatch.calculo.FiltroRecomendacao;
 import br.com.matheusnegrini.screenmatch.modelos.Filme;
 import br.com.matheusnegrini.screenmatch.modelos.Serie;
 
@@ -32,5 +33,9 @@ public class Principal {
         calculadora.inclui(meuFilme);
         calculadora.inclui(theOffice);
         System.out.println(calculadora.getTempoTotal());
+
+        FiltroRecomendacao filtro = new FiltroRecomendacao();{
+            filtro.filtra(meuFilme);
+        }
     }
 }
