@@ -2,7 +2,7 @@ package br.com.matheusnegrini.screenmatch.modelos;
 
 public class Serie extends Titulo{
     private int temporadas;
-    private int nome;
+    private String nome;
     private boolean ativa;
     private int minutosPorEpisodio;
     private int episodiosPorTemporada;
@@ -15,11 +15,11 @@ public class Serie extends Titulo{
         this.temporadas = temporadas;
     }
 
-    public int getNome() {
+    public String getNome() {
         return nome;
     }
 
-    public void setNome(int nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
 

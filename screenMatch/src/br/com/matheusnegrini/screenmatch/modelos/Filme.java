@@ -3,13 +3,13 @@ package br.com.matheusnegrini.screenmatch.modelos;
 import br.com.matheusnegrini.screenmatch.calculo.Classificavel;
 
 public class Filme extends Titulo implements Classificavel {
-    private String diretor;
+    private Serie diretor;
 
-    public String getDiretor() {
+    public Serie getDiretor() {
         return diretor;
     }
 
-    public void setDiretor(String diretor) {
+    public void setDiretor(Serie diretor) {
         this.diretor = diretor;
     }
 

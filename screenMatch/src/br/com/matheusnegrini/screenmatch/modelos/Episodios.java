@@ -4,7 +4,7 @@ import br.com.matheusnegrini.screenmatch.calculo.Classificavel;
 
 public class Episodios implements Classificavel {
     private int numero;
-    private String nome;
+    private java.lang.String nome;
     private Serie serie;
     private int totalDeVisualizacoes;
 
@@ -24,11 +24,11 @@ public class Episodios implements Classificavel {
         this.numero = numero;
     }
 
-    public String getNome() {
+    public java.lang.String getNome() {
         return nome;
     }
 
-    public void setNome(String nome) {
+    public void setNome(java.lang.String nome) {
         this.nome = nome;
     }
 
@@ -47,5 +47,8 @@ public class Episodios implements Classificavel {
          }else {
              return 5;
          }
+    }
+
+    public void setSerie(java.lang.String theOffice) {
     }
 }

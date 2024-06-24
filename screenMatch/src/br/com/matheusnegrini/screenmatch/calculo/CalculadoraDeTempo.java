@@ -1,7 +1,5 @@
 package br.com.matheusnegrini.screenmatch.calculo;
 
-import br.com.matheusnegrini.screenmatch.modelos.Filme;
-import br.com.matheusnegrini.screenmatch.modelos.Serie;
 import br.com.matheusnegrini.screenmatch.modelos.Titulo;
 
 public class CalculadoraDeTempo {

@@ -1,10 +1,11 @@
 import br.com.matheusnegrini.screenmatch.calculo.CalculadoraDeTempo;
 import br.com.matheusnegrini.screenmatch.calculo.FiltroRecomendacao;
+import br.com.matheusnegrini.screenmatch.modelos.Episodios;
 import br.com.matheusnegrini.screenmatch.modelos.Filme;
 import br.com.matheusnegrini.screenmatch.modelos.Serie;
 
 public class Principal {
-    public static void main(String[] args) {
+    public static void main(java.lang.String[] args) {
         Filme meuFilme = new Filme();
         meuFilme.setNome("Divertidamente 2");
         meuFilme.setAnoDeLancamento(2024);
@@ -35,7 +36,12 @@ public class Principal {
         System.out.println(calculadora.getTempoTotal());
 
         FiltroRecomendacao filtro = new FiltroRecomendacao();{
-            filtro.filtra(meuFilme);
+            Episodios episodio = new Episodios();
+            episodio.setNumero(1);
+            episodio.setSerie("The Office");
+            episodio.setTotalDeVisualizacoes(400);
+            filtro.filtra(episodio);
+
         }
     }
 }
